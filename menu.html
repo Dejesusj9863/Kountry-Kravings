@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title>Kountry Kravings</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+</style>
+
+<body>
+<header>
+</header>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off">
+	<a href="index.html" class="w3-bar-item w3-button">HOME</a>
+	<a href="#" class="w3-bar-item w3-button">MENU</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="locations.html" class="w3-bar-item w3-button">LOCATIONS</a>
+    <a href="feedback.html" class="w3-bar-item w3-button">FEEDBACK</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-right">Kountry Kravings</a>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-32 w3-xxlarge">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-white">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'lunch');" id="myLink">
+        <div class="w3-col s3 tablink w3-padding-large w3-hover-green">Lunch</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'dinner');">
+        <div class="w3-col s3 tablink w3-padding-large w3-hover-green">Dinner</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'salad');">
+        <div class="w3-col s3 tablink w3-padding-large w3-hover-green">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'starter');">
+        <div class="w3-col s3 tablink w3-padding-large w3-hover-green">Starter</div>
+      </a>
+    </div>
+
+    <div id="lunch" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Soup and Grilled Cheese</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+      <p class="w3-text-grey">Choose one of any of our daily soups to go along with our grilled three cheese sandwich</p>
+      <hr>
+
+      <h1><b>Classic BLT</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+      <p class="w3-text-grey">Toasted sourdough with mayonnaise, a generous portion of bacon, lettuce, and tomato</p>
+      <hr>
+
+      <h1><b>The Colonel</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+      <p class="w3-text-grey">Our own Almond Chicken Salad piled onto a croissant with lettus and tomato</p>
+      <hr>
+
+      <h1><b>Hand-breaded Chicken Tenders</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8-$12</span></h1>
+      <p class="w3-text-grey">A choice of 3 or 5 Tenders with a choice of Dippin' Sauce</p>
+      <hr>
+
+      <h1><b>Grilled Chicken Bacon Ranch Sandwich</b> <span class="w3-tag w3-red w3-round">Hot!</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <p class="w3-text-grey">A fresh, grilled, seasoned chicken breast topped with lettuce,
+         tomato, grill-cooked bacon, and a savory house-made buttermilk ranch sauce on a sweet butter bun</p>
+      <hr>
+    </div>
+
+    <div id="dinner" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Best Ever Kountry Fried Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15</span></h1>
+      <p class="w3-text-grey">Fresh, specially seasoned, hand-breaded chicken fried crisp and golden</p>
+      <hr>
+
+      <h1><b>Fried Pork Chop Plate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$18</span></h1>
+      <p class="w3-text-grey">Two Crispy Breaded Chops with White Gravy</p>
+      <hr>
+
+      <h1><b>Kountry Fried Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+      <p class="w3-text-grey">Our famous deep-fried chicken breast fillet topped with Sawmill Gravy</p>
+      <hr>
+
+      <h1><b>Chicken N' Dumplins</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.50</span></h1>
+      <p class="w3-text-grey">Freshly prepared dumplings with chicken tenderloins</p>
+      <hr>
+
+      <h1><b>kountry Fried Steak</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$25.00</span></h1>
+      <p class="w3-text-grey">USDA Choice steak breaded, deep fried, and topped with Sawmill Gravy</p>
+      <hr>
+    </div>
+
+    <div id="salad" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Kountry Grilled Chicken Caesar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$20</span></h1>
+      <p class="w3-text-grey">Smoky Kountry grilled chicken breast over Romaine lettuce tossed with Ceasar dressing
+        topped with shaved Parmesan, grape tomatoes, house-baked croutons and two deviled eggs</p>
+      <hr>
+
+      <h1><b>Fried Chicken Cobb Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15</span></h1>
+      <p class="w3-text-grey">Sliced fried Chicken Nuggets served hot on a fresh bed of chopped romaine lettuce and baby greens,
+         topped with shredded red cabbage and carrots, roasted corn kernels, a blend of shredded Monterey Jack and cheddar cheeses,
+         crumbled bacon, diced eggs, and grape tomatoes</p>
+      <hr>
+
+      <h1><b>Grilled Market Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.50</span></h1>
+      <p class="w3-text-grey">Grilled and sliced chicken breast served on a fresh bed of chopped romaine lettuce and baby greens,
+        topped with shredded red cabbage and carrots, crumbled blue cheese and a mix of red and green apples, strawberries and blueberries</p>
+      <hr>
+    </div>
+
+    <div id="starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Sharp and Spicy Pimento Cheese</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5</span></h1>
+      <p class="w3-text-grey">Goes perfectly with toast points</p>
+      <hr>
+
+      <h1><b>Fried Dill Pickles</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.50</span></h1>
+      <p class="w3-text-grey">Served with your choice of sauce</p>
+      <hr>
+
+      <h1><b>Cold Corn Dip</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5</span></h1>
+      <p class="w3-text-grey">A simple and delicious dip served with tortilla chips</p>
+      <hr>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-small w3-xxlarge">
+  <p>Kountry Kravings &copy;2017 </p>
+</footer>
+
+<script>
+// tabbed menu for foods
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-brown", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-brown";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
